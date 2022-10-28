@@ -1,14 +1,14 @@
 @extends('padrao')
 @section('content')
 
-<section class="cadastrarChuteira">
+<section class="cadastrarBone">
 
-<div class="container cadastroChuteira">
-<form class="row g-3" method="post" action="{{route('salvar-banco-chuteira')}}">
+<div class="container cadastroBones">
+<form class="row g-3" method="post" action="{{route('salvar-banco-bone')}}">
   @csrf
   <div class="col-md-12">
     <label for="inputModelo" class="form-label">Modelo</label>
-    <input type="text" name="modelo" value="{{old('modelo')}}" class="form-control" id="inputModelo" placeholder="Chuteira">
+    <input type="text" name="modelo" value="{{old('modelo')}}" class="form-control" id="inputModelo" placeholder="Boné">
 
     @error('modelo')
     <div class="fw-bolder">*Preencher o campo modelo. </div>

@@ -13,6 +13,12 @@ class CamisasController extends Controller
     return view('cadastrarCamisa');
     }
 
+    public function listaCamisa()
+    {
+
+    return view('listaCamisa');
+    }
+
     public function SalvarBancoCamisa(Request $request){
 
         $dadosCamisa = $request->validate([
@@ -26,7 +32,7 @@ class CamisasController extends Controller
     
         Camisas::create($dadosCamisa);
     
-        return Redirect::route('home');
+        return Redirect::route('editar-camisa');
     
     
         }
@@ -43,7 +49,7 @@ class CamisasController extends Controller
             return view('editarCamisa',['registroCamisa' => $dadosCamisa]);
 }
     public function apagarCamisa(Camisas $registroCamisa){
-        
+
         
         $registroCamisa->delete();
 
@@ -84,6 +90,14 @@ public function apagarCamisas(Camisas $registroCamisa){
     return Redirect::route('editar-camisa');
 
 }
+
+    public function MostrarCamisas(){
+        //dd($dadosCaminhao);
+        $dadosCamisa = Camisas::all();
+        //dd($dadosCaminhao);
+        return view('editarCamisa',['registroCamisa' => $dadosCamisa]);
+        
+    }
 
 }
 

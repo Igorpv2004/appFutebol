@@ -11,7 +11,15 @@ class ChuteiraController extends Controller
     {
 
     return view('cadastrarChuteira');
+
     }
+
+    public function listaChuteira()
+    {
+
+    return view('listaChuteira');
+    }
+
 
     public function SalvarBancoChuteira(Request $request){
 
@@ -26,8 +34,53 @@ class ChuteiraController extends Controller
     
         Chuteira::create($dadosChuteira);
     
-        return Redirect::route('home');
+        return Redirect::route('editar-chuteira');
     
     
         }
+        public function AlterarBancoChuteira(Camisas $registroChuteira, Request $request){
+
+            $banco = $request->validate([
+            'modelo' => 'string|required',
+            'tamanho' => 'string|required',
+            'marca' => 'string|required',
+            'cor' => 'string|required',
+            'valor' => 'string|required'
+    
+            ]);
+    
+            $registroChuteira->fill($banco);
+            $registroChuteira->save();
+    
+            
+    
+            return Redirect::route('editar-chuteira');
+    
+    }
+    public function MostrarEditarChuteira(Request $request){
+            
+        $dadosChuteira = Chuteira::query();
+        $dadosChuteira->when($request->marca,function($query, $v1){
+            $query->where('marca','like','%'.$v1.'%');
+        });
+
+        $dadosChuteira = $dadosChuteira->get();
+        
+        return view('editarChuteira',['registroChuteira' => $dadosChuteira]);
+}
+    public function apagarChuteira(Chuteira $registroChuteira){
+        
+        
+        $registroChuteira->delete();
+
+
+        return Redirect::route('editar-chuteira');
+    }
+
+    public function MostrarAlterarChuteira(Chuteira $registroChuteira){
+
+        return view('alterarChuteira', ['registroChuteira' => $registroChuteira]);
+    }
+
+
 }

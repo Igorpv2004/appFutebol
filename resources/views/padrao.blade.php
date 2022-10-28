@@ -26,10 +26,10 @@
             Camisas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Galeria de Camisas</a></li>
+            <li><a class="dropdown-item" href="/listaCamisa">Galeria de Camisas</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="/cadastrarCamisa">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="/editarCamisa">Gerenciar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -37,10 +37,10 @@
             Chuteiras
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Galeria de Chuteiras</a></li>
+            <li><a class="dropdown-item" href="/listaChuteira">Galeria de Chuteiras</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="/cadastrarChuteira">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="/editarChuteira">Gerenciar</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -48,10 +48,10 @@
             Bonés
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Galeria de Bonés</a></li>
+            <li><a class="dropdown-item" href="/listaBone">Galeria de Bonés</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="#">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="/cadastrarBone">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="/editarBone">Gerenciar</a></li>
           </ul>
         </li>
       </ul>

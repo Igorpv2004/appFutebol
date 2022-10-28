@@ -2,38 +2,65 @@
 @section('content')
 
 <section class="home">
+
+<div class="text-center">
+<h1>Profetas Import's</h1>
+</div>
   
 <img src="{{'/img/fundo1.jpg'}}" class="card-img-top" alt="...">
-<div class="card-group">
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+<div class="text-center">
+<h1>Nossos Produtos</h1>
+</div>
+<h1>    </h1>
+
+<div class="text-center">
+<h1> </h1>
+</div>
+<div class="text-center">
+<h1> </h1>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{'/img/c.jpg'}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Camisas De Futebol</h5>
+        <p class="card-text">Encontre aqui as melhores camisas do mercado!</p>
+      </div>
+      <a href="/listaCamisa" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Acesse Aqui !</a>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{'/img/chuteira.jpg'}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chuteiras</h5>
+        <p class="card-text">Encontre aqui as melhores chuteiras do mercado !</p>
+      </div>
+      <a href="/listaChuteira" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Acesse Aqui!</a>
+
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{{'/img/bone.jpg'}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bonés</h5>
+        <p class="card-text">Encontre aqui os melhores bonés do mercado !</p>
+      </div>
+      <a href="/listaBone" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Acesse Aqui !</a>
     </div>
   </div>
 </div>
 
-
-
-
-
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 </section>
 @endsection

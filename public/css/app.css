@@ -15,6 +15,40 @@
     min-height: 100vh;
 }
 
+.cadastrarCamisa{ 
+width: 100%;
+min-height: 100vh;
+}
+
+.editarCamisa{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.cadastrarChuteira{ 
+    width: 100%;
+    min-height: 100vh;
+    }
+    
+.editarChuteira{
+        width: 100%;
+        min-height: 100vh;
+    }
+
+.cadastrarBone{ 
+        width: 100%;
+        min-height: 100vh;
+        }
+        
+.editarBone{
+            width: 100%;
+            min-height: 100vh;
+        }
+        
+    
+body{
+    background-color: white;
+}
 
 
 
