@@ -1,6 +1,9 @@
 @extends('padrao')
 @section('content')
-<section class="altura1">
+<section class="altura8">
+<div class="text-center">
+  <h1>Tela de Edição</h1>
+</div>
 <div class="container cadastroCamisa">
 <form class="row g-3" method="post" action="{{route('alterar-banco-chuteira',$registroChuteira->id)}}">
   @csrf

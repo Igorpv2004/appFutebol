@@ -38,7 +38,7 @@ class ChuteiraController extends Controller
     
     
         }
-        public function AlterarBancoChuteira(Camisas $registroChuteira, Request $request){
+        public function AlterarBancoChuteira(Chuteira $registroChuteira, Request $request){
 
             $banco = $request->validate([
             'modelo' => 'string|required',
@@ -68,12 +68,12 @@ class ChuteiraController extends Controller
         
         return view('editarChuteira',['registroChuteira' => $dadosChuteira]);
 }
-    public function apagarChuteira(Chuteira $registroChuteira){
+    public function apagarChuteira(Chuteira $registroChuteiras){
         
+      
+        $registroChuteiras->delete();
+
         
-        $registroChuteira->delete();
-
-
         return Redirect::route('editar-chuteira');
     }
 

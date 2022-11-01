@@ -4,7 +4,7 @@
 <section class="home">
 
 <div class="text-center">
-<h1>Profetas Import's</h1>
+<h1>Loja de Esportes</h1>
 </div>
   
 <img src="{{'/img/fundo1.jpg'}}" class="card-img-top" alt="...">

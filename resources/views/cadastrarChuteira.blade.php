@@ -3,6 +3,10 @@
 
 <section class="cadastrarChuteira">
 
+<div class="text-center">
+  <h1>Tela de Cadastro</h1>
+</div>
+
 <div class="container cadastroChuteira">
 <form class="row g-3" method="post" action="{{route('salvar-banco-chuteira')}}">
   @csrf

@@ -38,7 +38,7 @@ class BoneController extends Controller
     
         }
 
-        public function AlterarBancoBone(Camisas $registroBone, Request $request){
+        public function AlterarBancoBone(Bone $registroBone, Request $request){
 
             $banco = $request->validate([
             'modelo' => 'string|required',

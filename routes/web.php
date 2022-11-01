@@ -44,7 +44,7 @@ Route::put('/editarChuteira/{registroChuteira}',[ChuteiraController::class,'Alte
 
 Route::get('/editarChuteira',[ChuteiraController::class,'MostrarEditarChuteira'])->name('editar-chuteira');
 
-Route::delete('/editarChuteira/{registroChuteira}',[ChuteiraController::class,'apagarChuteira'])->name('apagar-chuteira');
+Route::delete('/editarChuteira/{registroChuteiras}',[ChuteiraController::class,'apagarChuteira'])->name('apagar-chuteira');
 
 Route::get('/alterarChuteira/{registroChuteira}',[ChuteiraController::class,'MostrarAlterarChuteira'])->name('alterar-chuteira');
 
