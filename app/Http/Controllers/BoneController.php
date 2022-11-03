@@ -76,4 +76,16 @@ class BoneController extends Controller
 
         return Redirect::route('editar-bone');
     }
+
+    public function MostrarEditarBone(Request $request){
+            
+        $dadosBone = Bone::query();
+        $dadosBone->when($request->marca,function($query, $v1){
+            $query->where('marca','like','%'.$v1.'%');
+        });
+
+        $dadosBone = $dadosBone->get();
+        
+       return view('editarBone',['registroBone' => $dadosBone]);
+}
 }

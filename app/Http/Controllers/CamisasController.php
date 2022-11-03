@@ -46,7 +46,7 @@ class CamisasController extends Controller
     
             $dadosCamisa = $dadosCamisa->get();
             
-            return view('editarCamisa',['registroCamisa' => $dadosCamisa]);
+           return view('editarCamisa',['registroCamisa' => $dadosCamisa]);
 }
     public function apagarCamisa(Camisas $registroCamisa){
 
@@ -90,7 +90,7 @@ public function apagarCamisas(Camisas $registroCamisa){
     return Redirect::route('editar-camisa');
 
 }
-
+/*
     public function MostrarCamisas(){
         //dd($dadosCaminhao);
         $dadosCamisa = Camisas::all();
@@ -98,7 +98,7 @@ public function apagarCamisas(Camisas $registroCamisa){
         return view('editarCamisa',['registroCamisa' => $dadosCamisa]);
         
     }
-
+*/
 }
 
 

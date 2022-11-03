@@ -82,5 +82,15 @@ class ChuteiraController extends Controller
         return view('alterarChuteira', ['registroChuteira' => $registroChuteira]);
     }
 
+    public function MostrarEditarChuteiras(Request $request){
+            
+        $dadosChuteira = Chuteira::query();
+        $dadosChuteira->when($request->marca,function($query, $v1){
+            $query->where('marca','like','%'.$v1.'%');
+        });
 
+        $dadosChuteira = $dadosChuteira->get();
+        
+       return view('editarChuteira',['registroChuteira' => $dadosChuteira]);
+}
 }

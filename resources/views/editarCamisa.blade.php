@@ -4,8 +4,9 @@
 
 <div class="container m-5" >
 <form method="get" action="/editarCamisa">
-
+  
 <div class="row center">
+
   <div class="col">
     <input type="text" id="marca" name="marca" class="form-control" placeholder="Digite a Marca da Camisa" aria-label="First name">
   </div>

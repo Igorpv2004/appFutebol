@@ -42,13 +42,13 @@ Route::delete('/editarCamisa/{registroCamisa}',[CamisasController::class,'apagar
 //
 Route::put('/editarChuteira/{registroChuteira}',[ChuteiraController::class,'AlterarBancoChuteira'])->name('alterar-banco-chuteira');
 
-Route::get('/editarChuteira',[ChuteiraController::class,'MostrarEditarChuteira'])->name('editar-chuteira');
+Route::get('/editarChuteira',[ChuteiraController::class,'MostrarEditarChuteiras'])->name('editar-chuteira');
 
 Route::delete('/editarChuteira/{registroChuteiras}',[ChuteiraController::class,'apagarChuteira'])->name('apagar-chuteira');
 
 Route::get('/alterarChuteira/{registroChuteira}',[ChuteiraController::class,'MostrarAlterarChuteira'])->name('alterar-chuteira');
 
-Route::get('/editarCamisa',[CamisasController::class,'MostrarCamisas'])->name('editar-camisa');
+//Route::get('/editarCamisa',[CamisasController::class,'MostrarCamisas'])->name('editar-camisa');
 
 Route::get('/cadastrarBone',[BoneController::class,'cadastroBone'])->name('cadastrar-bone');
 
@@ -67,6 +67,8 @@ Route::get('/listaCamisa',[CamisasController::class,'listaCamisa'])->name('lista
 Route::get('/listaChuteira',[ChuteiraController::class,'listaChuteira'])->name('lista-chuteira');
 
 Route::get('/listaBone',[BoneController::class,'listaBone'])->name('lista-bone');
+
+Route::get('/editarBone',[BoneController::class,'MostrarEditarBone'])->name('editar-bone');
 
 
 
